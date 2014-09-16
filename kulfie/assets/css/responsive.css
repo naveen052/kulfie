@@ -1,0 +1,127 @@
+/* ==========================================================================
+   Media Queries - Smaller than 1024px
+   ========================================================================== */
+
+@media all and (max-width: 1024px) and (min-width: 900px) {
+    .inner {
+        padding: 20px;
+    }
+     
+
+}
+@media all and (max-width: 899px) and (min-width: 481px) {
+    .inner {
+        padding: 20px;
+    }  
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    h5 {
+      font-size: 14px;
+    }
+    h6 {
+      font-size: 12px;
+    }
+    .grid_50 {
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    .grid_30 {
+        width: 49%;
+        float: left;
+        margin: 1%;
+        display: block;
+    }
+
+}
+
+/* ==========================================================================
+   Media Queries - Smaller than 500px
+   ========================================================================== */
+
+
+@media all and (max-width:480px) and (min-width: 250px) {
+    .inner {
+        padding: 20px;
+    }  
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    h5 {
+      font-size: 14px;
+    }
+    h6 {
+      font-size: 12px;
+    }
+    .grid_30 {
+        width: 100%;
+        float: none;
+        border-bottom:1px solid #ddd; 
+        padding: 0px;
+        display: block;
+    }
+}
+
+/* ==========================================================================
+   Responsive Shopping Cart
+   ========================================================================== */
+
+@media all and (max-width:700px) and (min-width: 10px) {   
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+    thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tbody {
+        margin-top: 20px;
+    }
+     .search-domain-results td { 
+        border-bottom: 1px solid #ddd;
+      }
+    .shopping-cart-main td {
+        border-bottom: 1px solid #ddd;  
+    }
+    td { 
+        background-color: #fff;
+        position: relative;
+        white-space: normal;
+        text-align:left;
+        text-align: center;
+    }
+ 
+    td:before { 
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+    }
+ 
+    td:before { content: attr(data-title); 
+    }
+}
