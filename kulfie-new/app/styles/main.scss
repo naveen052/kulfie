@@ -2,7 +2,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
-
+$base-color: #199ae3;
+$white:#fff;
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -12,58 +13,71 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+  font-family: Optima, Verdana, sans-serif;
+  p {
+    line-height: 1.8;
   }
 }
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
+.centered {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+}
+/* Header section on index.html */
+
+.index-header {
+  padding:50px 0px;
+}
+.intro-slider {
+  ul {
+    padding:0px 25px;
   }
 }
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
+.intro-inner {
+  padding:10% 0%;
+   h1 {
+    color: #2a2a2a;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 56px;
+    line-height: 58px;
+    display: block;
   }
+  p {
+      color: #515151;
+      display: block;
+      margin: auto;
+      font-size: 24px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+}
+.ghost-button {
+  border:2px solid #ddd;
+  padding:10px 20px;
+  border-radius:1px;
+  color:#515151;
+  font-size: 20px;
+
+  &:hover {
+    text-decoration:none;
+    border:2px solid #515151;
+    color: #515151;
+  }
+}
+.mini-mast-head {
+  padding:20px 0px;
+  color: $white;
+  background-color:$base-color;
+}
+.navigation {
+  float:right;
+}
+.what-we-do {
+  margin: 50px auto;
+padding: 2rem 0rem;
+}
+.icon {
+font-size: 60px;
+color: #199AE3;
 }
 
 /* Responsive: Portrait tablets and up */
