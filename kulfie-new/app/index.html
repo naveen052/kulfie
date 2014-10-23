@@ -34,7 +34,7 @@
   <header class="index-header clearfix">
       <div class="container">
           <div class="row">
-              <div class="col-md-3">
+              <div class="centered col-md-3">
                   <a href="index.html"><img src="images/logo.png" alt="Kulfie"></a>
               </div>
               <div class="col-md-9">
@@ -92,6 +92,9 @@
  <div class="what-we-do clearfix">
     <div class="container">
       <div class="row">
+      <div class="col-md-12 centered">
+          <h3 class="stand-out-heading">Things we love to work on</h3>
+      </div>
         <div class="col-md-6">
           <div class="icon col-md-4 centered">
             <i class="fa fa-desktop"></i> 
@@ -137,6 +140,37 @@
       </div>
     </div>
  </div>
+  
+  <div class="recent-work clearfix">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-6" id="content-right">
+                    <img id="image1" class="display-on" src="images/2.png" >
+                    <img id="image2" class="display-off" src="images/3.png">
+                    <img id="image3" class="display-off" src="images/4.png">
+                </div>
+                <div  class="col-md-6"  id="content-left">
+                  <div id="tab1" class="tab active">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>Payment processing in your ERP Payment processing in your</p>
+                  </div>
+                  <div id="tab2" class="tab">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>OpenERP Magento Integration with Version 7 OpenERP </p>
+                  </div>
+                  <div id="tab3" class="tab">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>OpenERP Magento Integration with Integration with Version 7</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
 <script type="text/javascript">
@@ -149,7 +183,37 @@
 
 });
 </script>
+<script type="text/javascript">
+  $(document).ready(function(){
+  $("#tab1").click(function() {
+    $('#image1').removeClass('display-off');
+    $('#image2').addClass('display-off');
+    $('#image3').addClass('display-off');
+    $(this).addClass('active');
+    $('#tab2').removeClass('active');
+    $('#tab3').removeClass('active');   
+    })  
 
+  $("#tab2").click(function() {
+    $('#image1').addClass('display-off');
+    $('#image2').removeClass('display-off');
+    $('#image3').addClass('display-off');
+    $(this).addClass('active');
+    $('#tab1').removeClass('active');
+    $('#tab3').removeClass('active');     
+    })  
+
+  $("#tab3").click(function() {
+    $('#image1').addClass('display-off');
+    $('#image2').addClass('display-off');
+    $('#image3').removeClass('display-off');
+    $(this).addClass('active');
+    $('#tab1').removeClass('active');
+    $('#tab2').removeClass('active');     
+    })  
+});
+
+</script>
 <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
 <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
 <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
