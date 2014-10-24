@@ -41,9 +41,9 @@
                   <nav class="navigation">
                     <ul class="nav nav-pills">
                       <li><a href="index.html">Home</a></li>
-                      <li><a href="products.html">Products</a></li>
-                      <li><a href="work.html">Recent Work</a></li>
-                      <li><a href="contactus.hmtl">Contact</a></li>
+                      <li><a href="#about">What we do</a></li>
+                      <li><a href="#work">Recent Work</a></li>
+                      <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
               </div>
@@ -83,13 +83,13 @@
   <div class="mini-mast-head clearfix">
     <div class="container">
       <div class="col-md-12 centered">
-          <h3>We are driven by Creative Thinking and Modern Technology</h2>
+          <h3>We are driven by Creative Thinking and Modern Technology</h3>
       </div>
     </div>
   </div>
 
  <!-- What we do -->
- <div class="what-we-do clearfix">
+ <div id="about" class="what-we-do clearfix">
     <div class="container">
       <div class="row">
       <div class="col-md-12 centered">
@@ -141,7 +141,7 @@
     </div>
  </div>
   
-  <div class="recent-work clearfix">
+  <div id="work" class="recent-work clearfix">
       <div class="container">
           <div class="row">
           <div class="col-md-12 centered">
@@ -172,14 +172,71 @@
       </div>
   </div>
   <div class="jumbotron-bg clearfix">
-    <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-              hello
+    <div class="inner-jumbotron clearfix">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                  <h3>We work from concept to implementation and beyond, we have loads of fresh ideas that are ready to be implemented on your products to make them better and help it stand out from the others.</h3>
+                  <p>Let us help build your next beautiful product.</p>
+                  <p><a data-toggle="modal" href="#tallModal" class="ghost-button">Send us a message</a></p>
+              </div>
           </div>
       </div>
     </div>
   </div>
+
+    
+  <div id="contact" class="big-mast-head clearfix">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+            <h5>You have an idea we have a solution, lets get to know each other. Hit the button on the right and tell us how can we help </h5>
+        </div>
+        <div class="col-md-4">
+           <a data-toggle="modal" href="#tallModal" class="right ghost-button">Request a quote</a>
+            <div id="tallModal" class="modal modal-wide fade">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Request a Quote</h4>
+                  </div>
+                  <div class="modal-body">
+                    <iframe frameborder="0" scrolling="no" src="https://docs.google.com/forms/d/1q9S6rBjT-2GnTvvS_EaSHWyAQljNzZc_u75vSx0hOtE/viewform?usp=send_form">
+                    </iframe>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mini-mast-head clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Made with <i class="fa fa-heart"></i> in India <br>
+                    Copyright ©2014 <a href="http://kulfie.com">Kulfie</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+              <span class="social right">
+                 <p><a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-skype"></i></a>
+                  </p> 
+              </span>
+            </div>
+        </div>
+    </div>
+  </footer>
+
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
 <script type="text/javascript">  
